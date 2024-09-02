@@ -1,0 +1,4 @@
+enum AppDestination {
+  randomUselessfact,
+  savedUselessfacts,
+}

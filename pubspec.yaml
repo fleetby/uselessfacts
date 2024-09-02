@@ -1,0 +1,102 @@
+name: uselessfacts
+description: Explore a collection of random useless facts presented in a stylish format, accompanied by music that prompts deep thoughts. 
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  animated_list_plus: ^0.5.2
+  dio: ^5.6.0
+  drift: ^2.20.0
+  drift_flutter: ^0.2.0
+  flutter:
+    sdk: flutter
+  flutter_native_splash: ^2.4.1
+  flutter_riverpod: ^2.5.1
+  freezed_annotation: ^2.4.4
+  google_fonts: ^6.2.1
+  json_annotation: ^4.9.0
+  just_audio: ^0.9.40
+  just_audio_mpv: ^0.1.7
+  just_audio_windows: ^0.2.1
+  riverpod_annotation: ^2.3.5
+  shared_preferences: ^2.3.2
+  skeletonizer: ^1.4.2
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: any
+  riverpod_generator: ^2.4.3
+  custom_lint: ^0.6.5
+  riverpod_lint: ^2.3.13
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  drift_dev: ^2.20.1
+  icons_launcher: ^2.1.7
+  package_rename: ^1.7.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - google_fonts/
+
+flutter_native_splash:
+  color: '#000000'
+  android_12:
+    color: '#000000'
+
+icons_launcher:
+  image_path: 'icons/icon.png'
+  platforms:
+    android:
+      adaptive_background_image: 'icons/adaptive_background_image.png'
+      adaptive_foreground_image: 'icons/adaptive_foreground_image.png'
+      adaptive_monochrome_image: 'icons/adaptive_monochrome_image.png'
+      enable: true
+    ios:
+      enable: true
+    macos:
+      enable: true
+    windows:
+      enable: true
+    web:
+      enable: true
+    linux:
+      enabled: true
+
+package_rename_config:
+  android:
+    app_name: Uselessfacts
+    package_name: io.github.fleetby.uselessfacts
+
+  ios:
+    app_name: Uselessfacts
+    bundle_name: FleetbyUselessfacts
+    package_name: io.github.fleetby.uselessfacts
+
+  linux:
+    app_name: Uselessfacts
+    package_name: io.github.fleetby.uselessfacts
+    exe_name: uselessfacts
+
+  macos:
+    app_name: Uselessfacts
+    package_name: io.github.fleetby.uselessfacts
+    copyright_notice: 'https://github.com/fleetby.uselessfacts'
+
+  web:
+    app_name: Uselessfacts
+    short_app_name: Uselessfacts
+    description: Explore a collection of random useless facts presented in a stylish format, accompanied by music that prompts deep thoughts.
+
+  windows:
+    app_name: Uselessfacts
+    organization: fleetby
+    exe_name: uselessfacts
+    copyright_notice: 'https://github.com/fleetby.uselessfacts'
